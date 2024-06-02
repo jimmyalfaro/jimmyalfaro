@@ -1,0 +1,639 @@
+/* Estilos para la sección Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para el div del logo */
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para la sección Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Fondo con degradado */
+    color: white;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
+}
+
+
+.hero h1 {
+    font-size: 3em; /* Tamaño de fuente grande para el título */
+    margin-bottom: 20px;
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.hero p {
+    font-size: 1.5em; /* Tamaño de fuente más grande para la descripción */
+    margin-bottom: 30px;
+    max-width: 600px; /* Limita el ancho del párrafo */
+    line-height: 1.4; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilos para el botón de llamada a la acción (CTA) */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 1.2em; /* Tamaño de fuente del botón */
+    color: white;
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones para el fondo y la transformación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Cambio de color de fondo al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el cursor */
+}
+
+/* Estilo de la sección con dos columnas */
+
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-column h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text-column p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cta-link {
+    display: inline-block;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+/*Registro de ingresos y objetivo de ahorro*/
+#register-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+#register-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#register-form {
+    max-width: 4800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos generales para formularios */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container label {
+    font-size: 1em;
+    text-align: left;
+}
+
+.container input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.container button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los enlaces de registro e inicio de sesión */
+.register-link, .login-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover, .login-link:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+#footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links, .footer-legal {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-legal li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-legal a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-legal a:hover {
+    color: #ddd;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer-social img {
+    width: 60px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover img {
+    opacity: 0.7;
+}
+
+/* main de servicios*/
+.services-main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.services-main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services-main h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #555;
+}
+
+.services-main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-main ul li {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-main ul li p {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* main de contacto*/
+.contact-main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.contact-main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-main p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+/* Main de Sobre Nosotros*/
+.about-main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.about-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-column h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #007BFF;
+}
+
+.about-column p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.about-column ul {
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.about-column ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para el formulario de registro en la página principal */
+#register-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+#register-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#register-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la página de categorías */
+.categories-main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.categories-main h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#categories-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#categories-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#categories-form .form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+#categories-form .form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Estilos para la página de estadísticas */
+.statistics-main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.statistics-main h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#expenses-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#expenses-table th,
+#expenses-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#expenses-table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#expenses-table td {
+    background-color: #fff;
+}
+
+#expensesChart {
+    max-width: 800px;
+    margin: 0 auto;
+}

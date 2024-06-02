@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMentor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="about.html">Sobre Nosotros</a>
+        </nav>
+
+        <h1>MoneyMentor</h1>
+
+        <div class="logo">
+            <img src="C:\Users\MINEDUCYT\Desktop\vsc-app\moneymentoricon.png" alt="Logo de la empresa">
+        </div>
+    </header>
+    <main class="statistics-main">
+        <h1>Estadísticas de Gastos</h1>
+        <table id="expenses-table">
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Gasto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Comida</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Entretenimiento</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Educación</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Transporte</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Salud</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Compras</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Gastos Básicos</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Viajes</td>
+                    <td>400</td>
+                </tr>
+            </tbody>
+        </table>
+        <canvas id="expensesChart"></canvas>
+    </main>
+        <footer> 
+            <div class="footer-column">
+                <div id="footer-logo">
+                    <a href="/">
+                        <img src="C:\Users\MINEDUCYT\Desktop\vsc-app\moneymentoricon.png" alt="Logo de la empresa">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-links">
+                    <li><a href="educacion-financiera.html">Educación Financiera</a></li>
+                    <li><a href="ahorro.html">Ahorro</a></li>
+                    <li><a href="inversion.html">Inversión</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-legal">
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    <li><a href="cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="footer-social">
+                    <a href="https://instagram.com" target="_blank"><img src="C:\Users\MINEDUCYT\Desktop\vsc-app\logoinsta.png" alt="Instagram"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="C:\Users\MINEDUCYT\Desktop\vsc-app\xicon.jpg" alt="Twitter"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="C:\Users\MINEDUCYT\Desktop\vsc-app\logofacebook.jpg" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Datos de la tabla
+            const labels = ["Comida", "Entretenimiento", "Educación", "Transporte", "Salud", "Compras", "Gastos Básicos", "Viajes"];
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Gastos',
+                    data: [100, 50, 200, 80, 150, 120, 300, 400], // Estos valores deben ser dinámicos
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+    
+            // Configuración de la gráfica
+            const config = {
+                type: 'bar',
+                data: data,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            };
+    
+            // Renderizar la gráfica
+            const expensesChart = new Chart(
+                document.getElementById('expensesChart'),
+                config
+            );
+        </script>
+</body>
+</html>
